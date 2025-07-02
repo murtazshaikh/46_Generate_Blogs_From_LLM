@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  background-color: #121212;
+  color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.heading {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.prompt-input {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  border: 1px solid #555;
+  border-radius: 8px;
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+.generate-button {
+  margin-top: 1rem;
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.generate-button:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+.generate-button:hover:enabled {
+  background-color: #0056b3;
+}
+
+.error-text {
+  color: #ff4c4c;
+  margin-top: 1rem;
+}
+
+.blog-output {
+  margin-top: 2rem;
+  line-height: 1.6;
+}
+
+.blog-output h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.blog-output p {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 600px) {
+  .App {
+    padding: 1rem;
+  }
+
+  .heading {
+    font-size: 1.5rem;
+  }
+
+  .prompt-input {
+    font-size: 0.9rem;
+    padding: 0.75rem;
+  }
+
+  .generate-button {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.75rem;
+  }
+
+  .blog-output h2 {
+    font-size: 1.25rem;
+  }
+
+  .blog-output p {
+    font-size: 0.95rem;
+  }
+}
